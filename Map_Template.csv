@@ -1,0 +1,26 @@
+sys_order,incl_in_sys_file,sys_field_name,sys_number,sys_data_type,orig_data_type,sys_size,sys_format,m_o,sys_expected_values,sys_description,lb1_Mapped_Field,lb2_Mapped_Field,lb3_Mapped_Field
+1,txn,Report_Source,de-1,Text,Text,75,,o,,fields and formats taken from IA,rs,rs,source
+2,txn,Data_Level,de-2,Text,Text,250,,o,,,lvl,dlvl,lvl
+3,txn,Agent_ID,de-3,Text,Text,25,,m,,,op_id,operator,emp
+4,txn,Agent_First_Name,de-4,Text,Text,250,,o,,,first,f_name,
+5,txn,Agent_Last_Name,de-5,Text,Text,250,,o,,,last,l_name,
+6,txn,Product,de-6,Text,Text,250,,m,,,prod,prod_name,prduct
+7,txn,Product_Category,de-7,Text,Text,75,,m,"Deposit, Credit Card, PLC, Mortgage, GIC, Overdraft, Insurance",,prod_cat,prod_category,prod_cat
+8,txn,Transit,de-8,Text,Text,25,,o,,,tr,,branch
+9,txn,Product_Open_Date,de-9,Date,Date,25,mm/dd/yyyy,m,,,date,open_date,date_open
+10,txn,Account_Number,de-10,Numeric,Numeric,250,,m,,,acc_num,account,acc_num
+11,txn,Commission,de-11,Numeric,Numeric,25(2),123456.78,o,,,comm,,
+12,txn,Client_ID,de-12,Numeric,Numeric,250,,o,,,ecif,client_num,client_ind
+13,txn,Senior_Ind,de-13,Text,Boolean,,,,,,senior,senior_ind,senior
+,metric,Account_Still_Open,de-14,Boolean,Boolean,,,,,,acc_closed_flag,,acc_closed
+,metric,Account_In_Use,de-15,Boolean,Boolean,,,,,,acc_inactive,not_used,no_activity_ind
+,,additional_field1,,Text,Text,,,,,,,,
+,,additional_field2,,Text,Text,,,,,,,,
+,,additional_field3,,Text,Text,,,,,,,,
+,,additional_field4,,Text,Text,,,,,,,,
+,,additional_field5,,Text,Text,,,,,,,,
+,,additional_field6,,Text,Text,,,,,,,,
+,,additional_field7,,Text,Text,,,,,,,,
+,metric,additional_field8,,Text,Text,,,,,,additional_f,,
+,,additional_field9,,Text,Text,,,,,,,,
+,,additional_field10,,Text,Text,,,,,,,,
