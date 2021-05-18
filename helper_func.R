@@ -46,10 +46,29 @@ condensed_merge <- function(t1,t2,t1key,t2key){
   return(tf)
 }
 
+#month period that should load from Database
+prev_ym_date <- function(t,n){
+  #t is starting yyyymm 
+  #n is number of months prior
+  #output previous yyyymm
+  t <- format(seq(t,by="-1 month",length.out = n)-1,"%Y%m")[n]
+  return(t)
+  
+}
+
+# # Test
+# t <- Sys.Date()
+# for (n in c(1:10)){
+#   print(n)
+#   nt <- prev_ym_date(t,n)
+#   print(nt)
+# }
 
 #calculating previous yyyymm
-#given a current "yyyymm" and n - the number of months prior 
 prev_ym <- function(t,n){
+  #t is starting yyyymm 
+  #n is number of months prior
+  #output previous yyyymm
   #print(t)
   t1 <- as.numeric(as.character(substr(t,1,4)))
   t2 <- as.numeric(as.character(substr(t,5,6)))
